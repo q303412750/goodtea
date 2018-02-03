@@ -1,8 +1,26 @@
 
 
-<div class="foot">
+<!-- <div class="foot">
   <a [routerLink]="['/home/index']" >首页</a>
   <a [routerLink]="['/home/classify']" >分类</a>
   <a [routerLink]="['/home/shopcar']" >购物车</a>
   <a [routerLink]="['/home/my']" >我的</a>
-</div>
+</div> -->
+<nav class="mui-bar mui-bar-tab">
+  <a [routerLink]="['/home/index']" class="mui-tab-item mui-active" >
+    <span class="iconfont icon-home"></span>			
+    <span class="mui-tab-label">首页</span>
+  </a>
+  <a [routerLink]="['/home/classify']" class="mui-tab-item">
+    <span class="iconfont icon-kinds"></span>			
+    <span class="mui-tab-label">分类</span>
+  </a>
+  <a [routerLink]="['/home/shopcar']" class="mui-tab-item">
+    <span class="iconfont icon-gouwuche-copy"></span>			
+    <span class="mui-tab-label">购物车</span>
+  </a>
+  <a [routerLink]="['/home/my']" class="mui-tab-item">
+    <span class="iconfont icon-mys"></span>			
+    <span class="mui-tab-label">我的</span>
+  </a>
+</nav>

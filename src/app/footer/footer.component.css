@@ -10,3 +10,7 @@
     justify-content: space-around;
     align-content: center;
 }
+
+.mui-bar-tab .mui-tab-item.mui-active{
+    color: #0e6d45;
+}
