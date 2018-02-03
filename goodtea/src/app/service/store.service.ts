@@ -2,10 +2,11 @@ import { Injectable } from '@angular/core';
 import { Http } from '@angular/http';
 import { Observable } from 'rxjs';
 
+const config = "http://localhost:4000/";
 @Injectable()
 export class StoreService {
-
-        constructor(private http:Http) { }
+      
+      constructor(private http:Http) { }
 
 
       //   getProducts():Observable<Product[]>{
@@ -14,9 +15,8 @@ export class StoreService {
       // }
     
         getData():Observable<GoodTea[]>{
-          console.log("胡汉三又进来了")
-          return this.http.get("11")
-          .map(res=>res.json())
+          return this.http.get(config+"teaindex")
+            .map(res=>res.json())
         }
      
 

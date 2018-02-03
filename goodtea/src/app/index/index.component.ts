@@ -1,23 +1,32 @@
 import { Component, OnInit } from '@angular/core';
 import { GoodTea, StoreService } from '../service/store.service';
-
+import "rxjs/Rx"
+import * as mui from "../../assets/js/mui.js"
 @Component({
   selector: 'app-index',
   templateUrl: './index.component.html',
   styleUrls: ['./index.component.css']
 })
 export class IndexComponent implements OnInit {
-  private arr:GoodTea[];
-
+  private adlist:any;
   constructor(private StoreService:StoreService) {
 
    }
 
   ngOnInit() {
     this.StoreService.getData().subscribe((data)=>{
-      console.log(data)
-      
-    })
+      this.adlist = data[0]
+      this.adlist = this.adlist.data[0].ad
+      console.log(this.adlist)
+      }
+    )
+    setTimeout(() => {
+      var gallery = mui('.mui-slider');
+      gallery.slider({
+        interval:1000//自动轮播周期，若为0则不自动播放，默认为0；
+      });
+    }, 1500);
   }
+  
 
 }
