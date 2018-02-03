@@ -9,15 +9,10 @@
 
 .iconfont {
   font-family:"iconfont" !important;
-  font-size:.32rem;
+  font-size:.20rem;
   font-style:normal;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-
-  display: block;
-  overflow: hidden;
-
-  text-overflow: ellipsis;
 }
 
 .icon-iconfonticonfontjixieqimo:before { content: "\e62c"; }

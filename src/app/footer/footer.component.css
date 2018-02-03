@@ -3,8 +3,7 @@
     position: fixed;
     bottom: 0;
     left: 0;
-    height: 0.75rem;
-    line-height: 0.75rem;
+    height: 0.85rem;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -13,4 +12,21 @@
 
 .mui-bar-tab .mui-tab-item.mui-active{
     color: #0e6d45;
+}
+.iconfont{
+    display: block;
+    text-overflow: ellipsis;
+    font-size:.32rem;
+    height: .32rem;
+    line-height: .32rem;
+    text-align: center;
+}
+.mui-tab-label{
+    font-size: .14rem;
+}
+.mui-bar-tab{
+    height: 1rem;
+}
+.mui-bar-tab .mui-tab-item{
+    height: .85rem;
 }
