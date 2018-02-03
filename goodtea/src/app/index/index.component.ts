@@ -9,15 +9,20 @@ import * as mui from "../../assets/js/mui.js"
 })
 export class IndexComponent implements OnInit {
   private adlist:any;
+  private title:string = "good tea";
+  private contlist:any;
   constructor(private StoreService:StoreService) {
 
    }
 
   ngOnInit() {
     this.StoreService.getData().subscribe((data)=>{
-      this.adlist = data[0]
+      this.adlist = data[0]  //桥梁
+      console.log(data)
+      this.contlist = this.adlist.data[1].ad
       this.adlist = this.adlist.data[0].ad
-      console.log(this.adlist)
+      
+      console.log(this.contlist)
       }
     )
     setTimeout(() => {

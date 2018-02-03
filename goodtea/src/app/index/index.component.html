@@ -1,13 +1,31 @@
 <div class="index">
+  
+  <header class="mui-bar mui-bar-nav">
+      <a class="mui-icon mui-action-menu mui-icon-search mui-pull-right"></a>
+      <h1 class="mui-title">{{title}}</h1>
+  </header>
 
   <div class="swiper">
     <div class="mui-slider">
       <div class="mui-slider-group" >
         <div class="mui-slider-item"  *ngFor="let item of adlist" >
-          <a href="#"><img [src]="'http://sys.haocha.top'+item.cover" /></a>
+          <img [src]="'http://sys.haocha.top'+item.cover" />
         </div>
       </div>
     </div>
   </div>
 
+  <div class="hot">
+    <i class="iconfont icon-icon-test1"></i>
+    <span>热门推荐</span>
+  </div>
+
+  <div class="content">
+      <ul class="mui-table-view" *ngFor="let item of contlist" >
+          <li class="mui-table-view-cell mui-media">
+              <img [src]="'http://sys.haocha.top'+item.cover" />
+              <p class='mui-ellipsis'>{{item.title}}</p>
+          </li>
+      </ul>
+  </div>
 </div>

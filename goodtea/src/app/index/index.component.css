@@ -1,0 +1,22 @@
+.index .iconfont{
+    color: red;
+    font-size: .3rem;
+}
+.index .hot{
+    height: .7rem;
+    line-height: .7rem;
+    text-align: center left;
+    padding: 0 .2rem;
+}
+.content img{
+    width: 100%;
+    height: 100%;
+}
+.content p{
+    height: .5rem;
+    line-height: .5rem;
+    font-size: .35rem;
+    color: black;
+    text-align: center;
+    margin-top: .2rem;
+}
