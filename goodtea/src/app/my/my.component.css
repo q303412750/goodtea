@@ -1,0 +1,172 @@
+.my-box{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #f0f0f0;
+}
+.my-head{
+    width: 100%;
+    height: 2.75rem;
+    display: flex;
+    flex-direction: column;
+    background-color: #0e6d44;
+    padding: 0.3rem;
+    margin-bottom: 0.15rem;
+}
+.my-sezhi{
+    display: block;
+    width: 100%;
+    height: 0.6rem;
+    line-height: 0.6rem;
+    text-align: right;
+    color: #fff;
+    margin-bottom: 40px;
+}
+.my-sezhi i{
+    font-size: 0.4rem;
+}
+.my-xinxi{
+    width: 100%;
+    height: 0.96rem;
+    overflow: hidden;
+}
+.my-toux{
+    width: 0.96rem;
+    height: 0.96rem;
+    float: left;
+    border-radius: 50%;
+    overflow: hidden;
+    background-color: #fff;
+    margin-right: 0.3rem;
+}
+.my-login{
+    width: 2.5rem;
+    height: 0.96rem;
+    float: left;
+   
+}
+.my-name{
+    letter-spacing: 0.03rem;
+    width: 2.5rem;
+    height: 0.4rem;
+    line-height: 0.4rem;
+    font-size: 0.22rem;
+    color: #fff;
+    margin-bottom: 0.15rem;
+
+}
+.my-loginBtn{
+    letter-spacing: 0.03rem;    
+    padding: 0;
+    width: 1.2rem;
+    height: 0.4rem;
+    line-height: 0.4rem;
+    font-size: 0.22rem;
+    text-align: center;
+    color: #fff; 
+    background-color: #0e6d44;
+    border-radius: 0.06rem;
+    border-color: #fff;
+}
+.my-login2{
+    float: right;
+    height: 0.96rem;
+    line-height: 0.96rem;
+    color: white;
+    text-align: right;
+}
+.my-login2 i{
+    font-size: 0.25rem;
+}
+
+
+
+.my-mid{
+    width: 100%;
+    height: 1.7rem;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    margin-bottom: 0.2rem;
+}
+.my-dd{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 0.7rem;
+    border-top: 0.01rem #f3f3f3 solid;
+    border-bottom: 1px #f3f3f3 solid;
+}
+.my-dd span{
+    font-size: 0.22rem;
+    padding-left: 0.3rem;
+    line-height: 0.7rem;
+}
+.my-dd i{
+    padding-right: 0.3rem;
+    font-size: 0.4rem;
+    padding-left: 0.3rem;
+    line-height: 0.7rem;
+    color: #959595;
+}
+.my-goods{
+    width: 100%;
+    height: 1rem;
+    display: flex;
+    justify-content: space-around;
+}
+.my-font{
+    width: 33%;
+    height: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-top: 0.1rem;
+    
+}
+.my-huo{
+    text-align: center;
+    font-size: 0.33rem;
+    color: #585858;
+  
+}
+.my-txt{
+    text-align: center;
+    font-size: 0.22rem;
+    color: #585858;
+
+}
+
+.my-btm{
+    width: 100%;
+    height: 2rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: #fff;
+}
+.my-btm li{
+    width: 33.3%;
+    border-right: 0.01rem solid #f2f2f2;
+    border-bottom: 0.01rem solid #f2f2f2;
+}
+.my-fun1{
+    color: #6bcae8;
+}
+.my-fun2{
+    color: #f3c53d;
+}
+.my-fun3{
+    color: #e09eb7;
+}
+.my-fun4{
+    color: #ffa856;
+}
+.my-fun5{
+    color: #76c677;
+}
+.my-fun6{
+    color: #6bcae8;
+}
