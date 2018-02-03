@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { GoodTea, StoreService } from '../service/store.service';
 
 @Component({
   selector: 'app-index',
@@ -6,10 +7,17 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./index.component.css']
 })
 export class IndexComponent implements OnInit {
+  private arr:GoodTea[];
 
-  constructor() { }
+  constructor(private StoreService:StoreService) {
+
+   }
 
   ngOnInit() {
+    this.StoreService.getData().subscribe((data)=>{
+      console.log(data)
+      
+    })
   }
 
 }

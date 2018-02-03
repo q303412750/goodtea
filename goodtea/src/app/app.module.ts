@@ -12,7 +12,8 @@ import { NotFoundComponentComponent } from './not-found-component/not-found-comp
 import { FooterComponent } from './footer/footer.component';
 import { HeaderComponent } from './header/header.component';
 import { HomeComponent } from './home/home.component';
-
+import {HttpModule} from "@angular/http";
+import { StoreService } from './service/store.service';
 
 @NgModule({
   declarations: [
@@ -28,9 +29,13 @@ import { HomeComponent } from './home/home.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpModule
+
   ],
-  providers: [],
+  providers: [
+    StoreService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
