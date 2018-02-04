@@ -1,12 +1,13 @@
 <header class="mui-bar mui-bar-nav ">
   <a class="mui-icon mui-action-menu mui-icon-bars mui-pull-left"></a>
-  <h1 class="mui-title">分类</h1>
+  <h1 class="mui-title">{{title}}</h1>
 </header>
     <div class="mui-content">
       <div id="slider" class="mui-slider mui-fullscreen">
           <div class="mui-scroll-wrapper mui-slider-indicator mui-segmented-control mui-segmented-control-inverted">
-              <div class="mui-scroll">
-                  <a class="mui-control-item mui-active" data-index="0">茶具</a>
+              <div class="mui-scroll" >
+                    <a class="mui-control-item" *ngFor="let list of navlist" mui-active>{{list.name}}</a>
+                  <!-- <a class="mui-control-item mui-active" data-index="0">茶具</a>
                   <a class="mui-control-item" data-index="1">普洱茶</a>
                   <a class="mui-control-item" data-index="2">甘茶</a>
                   <a class="mui-control-item" data-index="3">绿茶</a>
@@ -16,32 +17,42 @@
                   <a class="mui-control-item" data-index="7">黑茶</a>
                   <a class="mui-control-item" data-index="8">花茶</a>
                   <a class="mui-control-item" data-index="9">再加工茶</a>
-                  <a class="mui-control-item" data-index="10">茶周边</a>
+                  <a class="mui-control-item" data-index="10">茶周边</a> -->
                   
               </div>
           </div>
+
+
+          <!-- <div *ngFor="let list of navlist">
+                <div *ngFor="let ss of list.child">
+                        {{ss.name}}
+               </div>   
+          </div> -->
+
+
           <div class="mui-slider-group">
-<!-- 茶具  -->
-              <div class="mui-slider-item mui-control-content mui-active">
+              
+              <div class="mui-slider-item mui-control-content mui-active" *ngFor="let list of navlist">
                   <div class="mui-scroll-wrapper">
                       <div class="mui-scroll">                                  
                             <div class="mui-slider-item">
                                 <ul class="mui-table-view">
                                     <li class="mui-table-view-cell">
                                         <a class="mui-navigate-right">
-                                          <p>进入茶具频道</p>
+                                          <p>进入{{list.name}}频道</p>
                                           <span>原产地直销，精品推荐</span>
                                         </a>
                                     </li>
                                 </ul>
-                                <div class="content">
-                                  <h4>煮水器</h4>
+                                <div class="content" *ngFor="let title of list.child">
+                                  <!-- <h4>煮水器</h4> -->
+                                  <h4>{{title.name}}</h4>
                                   <ul>
-                                      <li>
-                                        <img src="" alt="">
-                                        <p>不锈钢煮水器</p>
+                                      <li *ngFor="let text of title.child">
+                                            <img [src]="'http://sys.haocha.top'+text.imgUrl" />
+                                            <p>{{text.name}}</p>
                                       </li>
-                                      <li>
+                                      <!-- <li>
                                           <img src="" alt="">
                                           <p>玻璃煮水器</p>
                                       </li>
@@ -64,7 +75,7 @@
                                       <li>
                                           <img src="" alt="">
                                           <p>铜碳炉</p>
-                                      </li>
+                                      </li> -->
                                   </ul>
                                   
                                 </div>
@@ -73,7 +84,7 @@
                       </div>
                   </div>
               </div>
-
+<!-- 
               <div class="mui-slider-item mui-control-content">
                   <div class="mui-scroll-wrapper">
                       <div class="mui-scroll">
@@ -204,7 +215,7 @@
                       </div>
                   </div>
               </div>
-              
+               -->
           </div>
       </div>
   </div>

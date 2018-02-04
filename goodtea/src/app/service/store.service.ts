@@ -18,16 +18,20 @@ export class StoreService {
           return this.http.get(config+"teaindex")
             .map(res=>res.json())
         }
-     
 
-      }
+       getclassify():Observable<Classify[]>{
+        return this.http.get(config+"classify")
+        .map(res=>res.json())
+       }
 
+     }
 
+export class Classify{
+  constructor(
+    public data:any,
+        ){   }
+}
   
-   
-
-
-
 export class GoodTea{
   constructor(
     public img:string,
