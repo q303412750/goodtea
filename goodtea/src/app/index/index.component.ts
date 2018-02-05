@@ -24,7 +24,7 @@ export class IndexComponent implements OnInit {
       
       console.log(this.contlist)
       }
-    )
+    ) 
     setTimeout(() => {
       var gallery = mui('.mui-slider');
       gallery.slider({
