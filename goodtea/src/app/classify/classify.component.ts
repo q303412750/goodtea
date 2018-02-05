@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Classify, StoreService } from '../service/store.service';
-import * as mui from "../../assets/js/mui.js"
+//import * as mui from "../../assets/js/mui.js"
 import "rxjs/Rx";
 
 @Component({
