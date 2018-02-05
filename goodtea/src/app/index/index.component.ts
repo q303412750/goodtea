@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { GoodTea, StoreService } from '../service/store.service';
 import "rxjs/Rx"
-
+ 
 @Component({
   selector: 'app-index',
   templateUrl: './index.component.html',
