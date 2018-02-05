@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { GoodTea, StoreService } from '../service/store.service';
 import "rxjs/Rx"
-import * as mui from "../../assets/js/mui.js"
+
 @Component({
   selector: 'app-index',
   templateUrl: './index.component.html',
