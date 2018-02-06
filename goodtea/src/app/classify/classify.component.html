@@ -48,10 +48,14 @@
                                   <!-- <h4>煮水器</h4> -->
                                   <h4>{{title.name}}</h4>
                                   <ul>
+                                     
                                       <li *ngFor="let text of title.child">
+                                            <a [routerLink]="['/classdetail',1]">
                                             <img [src]="'http://sys.haocha.top'+text.imgUrl" />
                                             <p>{{text.name}}</p>
+                                            </a>
                                       </li>
+                                   
                                       <!-- <li>
                                           <img src="" alt="">
                                           <p>玻璃煮水器</p>
