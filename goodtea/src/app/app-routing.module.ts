@@ -8,6 +8,7 @@ import { NotFoundComponentComponent } from './not-found-component/not-found-comp
 import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
+import { ClassdetailComponent } from './classdetail/classdetail.component';
 
 const routes: Routes = [
   {path:"",redirectTo:"home",pathMatch:"full"},
@@ -22,7 +23,7 @@ const routes: Routes = [
   },
   {path:"login",component:LoginComponent},
   {path:"register",component:RegisterComponent},
-  
+  {path:"classdetail/:id",component:ClassdetailComponent},
   {path:"**",component:NotFoundComponentComponent}
   
 ];
