@@ -73,10 +73,10 @@
     float: right;
     height: 0.96rem;
     line-height: 0.96rem;
-    color: white;
     text-align: right;
 }
 .my-login2 i{
+    color: white;
     font-size: 0.25rem;
 }
 
@@ -97,6 +97,9 @@
     height: 0.7rem;
     border-top: 0.01rem #f3f3f3 solid;
     border-bottom: 1px #f3f3f3 solid;
+}
+.my-dd:hover{
+    background-color: #dadada;
 }
 .my-dd span{
     font-size: 0.22rem;
@@ -124,6 +127,9 @@
     justify-content: space-around;
     padding-top: 0.1rem;
     
+}
+.my-font:hover{
+    background-color: #dadada;
 }
 .my-huo{
     text-align: center;

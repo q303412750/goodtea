@@ -2,30 +2,29 @@
     <div class="back" (click)="goback()">
         <i class="iconfont icon-icon-arrow-left2"></i>
     </div>
-    <div class="tip">登录</div>
+    <div class="tip">登录</div> 
 
     <div class="head-r"><a [routerLink]="['/register']" >
       免费注册</a></div>
   </div>
 
-
 <div class="login-box">
-  <form class="mui-input-group">
-      <br>
+  <form class="mui-input-group" [formGroup]="formModel" (submit)="formSubmit()">
+      <br>           
     <div class="mui-input-row">
         <label>用户名</label>
-    <input type="text" class="mui-input-clear" placeholder="请输入用户名">
+    <input  type="text" class="mui-input-clear" placeholder="请输入用户名" formControlName="tel">
     </div>
     <br>
     
     <div class="mui-input-row">
         <label>密码</label>
-        <input type="password" class="mui-input-password" placeholder="请输入密码">
+        <input type="password" class="mui-input-password" placeholder="请输入密码" formControlName="pwd">
     </div>
     <br>
     
     <div class="mui-button-row">
-        <button type="button" class="mui-btn mui-btn-primary" >确认</button>
+        <button type="submit" class="mui-btn mui-btn-primary" >确认</button>
         <button type="button" class="mui-btn mui-btn-danger" >取消</button>
     </div>
   </form>

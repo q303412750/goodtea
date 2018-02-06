@@ -11,5 +11,9 @@ export class MyComponent implements OnInit {
 
   ngOnInit() {
   }
+  tologin(){
+    window.location.href="./login";
+  
 
+  }
 }

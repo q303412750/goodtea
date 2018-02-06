@@ -19,6 +19,14 @@ export class StoreService {
             .map(res=>res.json())
         }
 
+        getLogin(tel,pwd):Observable<Login[]>{
+          return this.http.post(config+"login",{
+            username:tel,
+            userpwd:pwd
+          })
+            .map(res=>res.json())
+        }
+
        getclassify():Observable<Classify[]>{
         return this.http.get(config+"classify")
         .map(res=>res.json())
@@ -29,6 +37,12 @@ export class StoreService {
 export class Classify{
   constructor(
     public data:any,
+        ){   }
+}
+export class Login{
+  constructor(
+    public tel:any,
+    public pwd:any
         ){   }
 }
   
