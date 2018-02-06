@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-classdetail',
@@ -11,5 +12,8 @@ export class ClassdetailComponent implements OnInit {
 
   ngOnInit() {
   }
-
+  goBack(){
+   
+    window.history.go(-1)
+  }
 }
