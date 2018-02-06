@@ -3,7 +3,7 @@ import { GoodTea, StoreService } from '../service/store.service';
 import "rxjs/Rx"
  
 @Component({
-  selector: 'app-index',
+  selector: 'app-index', 
   templateUrl: './index.component.html',
   styleUrls: ['./index.component.css']
 })
