@@ -16,6 +16,7 @@ import {HttpModule} from "@angular/http";
 import { StoreService } from './service/store.service';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
+import { ClassdetailComponent } from './classdetail/classdetail.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { RegisterComponent } from './register/register.component';
     HeaderComponent,
     HomeComponent,
     LoginComponent,
-    RegisterComponent
+    RegisterComponent,
+    ClassdetailComponent
   ],
   imports: [
     BrowserModule,
