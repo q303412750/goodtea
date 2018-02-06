@@ -16,11 +16,9 @@ import {HttpModule} from "@angular/http";
 import { StoreService } from './service/store.service';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
-<<<<<<< HEAD
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-=======
 import { ClassdetailComponent } from './classdetail/classdetail.component';
->>>>>>> 6fdf2e8603dd7f355af7ca83e4e0511beb54e07d
+
 
 @NgModule({
   declarations: [
