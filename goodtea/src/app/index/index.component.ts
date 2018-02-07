@@ -12,7 +12,7 @@ export class IndexComponent implements OnInit {
   private title:string = "good tea";
   private contlist:any;
   constructor(private StoreService:StoreService) {
-
+ 
    }
 
   ngOnInit() {
