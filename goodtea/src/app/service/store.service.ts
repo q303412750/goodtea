@@ -2,8 +2,8 @@ import { Injectable } from '@angular/core';
 import { Http } from '@angular/http';
 import { Observable } from 'rxjs';
 
-// const config = "http://localhost:4000/";
-const config = "http://39.106.209.95:4000/";
+ const config = "http://localhost:4000/";
+//const config = "http://39.106.209.95:4000/";
 @Injectable()
 export class StoreService {
       
