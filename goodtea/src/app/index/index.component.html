@@ -1,31 +1,49 @@
 <div class="index">
   
-  <header class="mui-bar mui-bar-nav">
-      <a class="mui-icon mui-action-menu mui-icon-search mui-pull-right"></a>
-      <h1 class="mui-title">{{title}}</h1>
-  </header>
-
-  <div class="swiper">
-    <div class="mui-slider">
-      <div class="mui-slider-group" >
-        <div class="mui-slider-item"  *ngFor="let item of adlist" >
-          <img [src]="'http://sys.haocha.top'+item.cover" />
+    <!-- <header class="mui-bar mui-bar-nav">
+        <a class="mui-icon mui-action-menu mui-icon-search mui-pull-right"></a>
+        <h1 class="mui-title">{{title}}</h1>
+    </header> -->
+    <header class = "mui-bar mui-bar-nav">
+      <input type = "search" placeholder = "输入关键字搜索" >
+    </header>
+    <div class="swiper">
+      <div class="mui-slider">
+        <div class="mui-slider-group" >
+          <div class="mui-slider-item"  *ngFor="let item of adlist" >
+            <img [src]="'http://sys.haocha.top'+item.cover" />
+          </div>
         </div>
       </div>
     </div>
-  </div>
-
-  <div class="hot">
-    <i class="iconfont icon-icon-test1"></i>
-    <span>热门推荐</span>
-  </div>
-
-  <div class="content">
-      <ul class="mui-table-view" *ngFor="let item of contlist" >
+  
+    <div class="hot">
+      <i class="iconfont icon-zan"></i>
+      <span>原产地推荐</span>
+    </div>
+  
+    <div class="content">
+        <ul class="mui-table-view" *ngFor="let item of contlist" >
+            <li class="mui-table-view-cell mui-media">
+                <img [src]="'http://sys.haocha.top'+item.cover" />
+                <!-- <p class='mui-ellipsis'>{{item.title}}</p>  -->
+            </li>
+        </ul>
+    </div>
+    <div class="hot1">
+      <i class="iconfont icon-icon"></i>
+      <span>热门品牌推荐</span>
+    </div>
+    <div class="band">
+      <ul class="mui-table-view" *ngFor="let item of bandlist" >
           <li class="mui-table-view-cell mui-media">
               <img [src]="'http://sys.haocha.top'+item.cover" />
-              <p class='mui-ellipsis'>{{item.title}}</p> 
+              <!-- <p class='mui-ellipsis'>{{item.title}}</p>  -->
           </li>
       </ul>
+    </div>
+    <div class="hot2">
+      <i class="iconfont icon-icon"></i>
+      <span>热门产品推荐</span>
+    </div>
   </div>
-</div>

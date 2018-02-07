@@ -31,7 +31,7 @@ export class ClassifyComponent implements OnInit {
       });
       mui('.mui-scroll').on('tap','.mui-control-item:not(.mui-active)',function(){
           mui('.mui-slider').slider().gotoItem(this.getAttribute('data-index'));
-      });
+      }); 
   });
   }
 
