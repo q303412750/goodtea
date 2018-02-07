@@ -20,7 +20,7 @@ export class StoreService {
             .map(res=>res.json())
         }
 
-        getLogin(tel,pwd):Observable<Login[]>{
+        getLogin(tel,pwd):Observable<Login>{
           return this.http.post(config+"login",{
             username:tel,
             userpwd:pwd
@@ -42,8 +42,7 @@ export class Classify{
 }
 export class Login{
   constructor(
-    public tel:any,
-    public pwd:any
+    public type:number
         ){   }
 }
   
