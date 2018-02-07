@@ -34,19 +34,21 @@ export class LoginComponent implements OnInit {
     var tel=this.formModel.get("tel").value;
     var pwd=this.formModel.get("pwd").value;
     this.StoreService.getLogin(tel,pwd).subscribe((data)=>{
-     
-      console.log(data.type);
-      console.log(typeof(data.type));
-        switch(data.type){
-          case 0:
-          mui.toast("用户不存在",{ duration:'short', type:'div' });break;
-          case 1:
-          mui.toast("连接成功",{ duration:'short', type:'div' });break;
-          case 2:
-          mui.toast("连接错误",{ duration:'short', type:'div' });break;
-          case 3:
-          mui.toast("密码错误",{ duration:'short', type:'div' });break;
-        }
+     mui.ready(($)=>{
+
+       console.log(data.type);
+       console.log(typeof(data.type));
+         switch(data.type){
+           case 0:
+           $.toast("用户不存在",{ duration:'short', type:'div' });break;
+           case 1:
+           $.toast("连接成功",{ duration:'short', type:'div' });break;
+           case 2:
+           $.toast("连接错误",{ duration:'short', type:'div' });break;
+           case 3:
+           $.toast("密码错误",{ duration:'short', type:'div' });break;
+         }
+     })
 
     })
   }
