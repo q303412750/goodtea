@@ -38,12 +38,24 @@
                 height:2.8rem;
 }
 .texts p{
-                width:5rem;
+                width:6.5rem;
                 margin-left:.2rem;
-                height:.23rem;
-                line-height:.23rem;
+                height:.24rem;
+                line-height:.24rem;
                 margin-top:.21rem;
 }
-.texts p span{
+.texts p .span1{
+                display:block;
+                float:left;
+                height:100%;
+                width:1.2rem;
+                font-size:.24rem;
+                color:#929292;
+}
+.texts p .span2{
+                display:block;
+                float:left;
                 margin-left:1rem;
+                font-size:.24rem;
+                color:#1a1e1f;
 }
