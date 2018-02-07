@@ -11,6 +11,7 @@ export class IndexComponent implements OnInit {
   private adlist:any;
   private title:string = "good tea";
   private contlist:any;
+  private bandlist:any;
   constructor(private StoreService:StoreService) {
  
    }
@@ -20,10 +21,11 @@ export class IndexComponent implements OnInit {
       this.adlist = data[0]  //桥梁
       console.log(data)
       this.contlist = this.adlist.data[1].ad
+      this.bandlist = this.adlist.data[2].ad
       this.adlist = this.adlist.data[0].ad
       
       console.log(this.contlist)
-      }
+      } 
     ) 
     setTimeout(() => {
       var gallery = mui('.mui-slider');
